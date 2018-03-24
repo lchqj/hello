@@ -13,25 +13,25 @@ namespace EnumType                                           \
     class value                                              \
     {                                                        \
     private:                                                 \
-	    value()                                              \
-	    {								                     \
-	    }								                     \
+        value()                                              \
+        {                                                    \
+        }                                                    \
     public:                                                  \
         value(int nValue)                                    \
-        {								                     \
+        {                                                    \
             ___value = (___enum)nValue;                      \
-        }								                     \
-	    value(___enum e)                                     \
-	    {								                     \
-		    ___value = e;				                     \
-	    }								                     \
-	    operator int() const			                     \
-	    {								                     \
-		    return ___value;			                     \
-	    }								                     \
+        }                                                    \
+        value(___enum e)                                     \
+        {                                                    \
+            ___value = e;                                    \
+        }                                                    \
+        operator int() const                                 \
+        {                                                    \
+            return ___value;                                 \
+        }                                                    \
         const char* c_str()const;                            \
-    private:							                     \
-	    ___enum ___value;				                     \
+    private:                                                 \
+        ___enum ___value;                                    \
     };                                                       \
 }     
 
